@@ -10,6 +10,10 @@ class Solution(object):
             graph[s].append(d)
 
         # sort destinations for each source
+        # here we sort all the vals in the
+        # list for a particular key. this
+        # is different from sort dict by vals
+        # for many f**king obvious reasons
         for source in graph:
             graph[source].sort(reverse = True)
 
